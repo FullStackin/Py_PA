@@ -13,7 +13,10 @@
 #______________________________YOUR CODE BELOW______________________________#
 
 # Your code here
+def filter_small_lists(lst):
+    return list(filter(lambda x: len(x) > 2, lst))
+
 
 # __________SAMPLE TEST DATA__________ #
-# print(filter_small_lists([[1], [1, 2], [1, 2, 3], [1, 2, 3, 4]]))     # [[1, 2, 3], [1, 2, 3, 4]]
-# print(filter_small_lists([]))                                         # []
+print(filter_small_lists([[1], [1, 2], [1, 2, 3], [1, 2, 3, 4]]))     # [[1, 2, 3], [1, 2, 3, 4]]
+print(filter_small_lists([]))                                         # []
